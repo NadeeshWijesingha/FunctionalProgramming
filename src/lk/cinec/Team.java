@@ -169,21 +169,7 @@ public class Team implements Comparable<Team> {
 
     @Override
     public String toString() {
-        return "Team{" +
-                "place= " + place +
-                ", teamName= " + teamName + '\'' +
-                ", compete= " + compete +
-                ", win= " + win +
-                ", drawn= " + drawn +
-                ", lose= " + lose +
-                ", scoredFor= " + scoredFor +
-                ", scoredAgainst= " + scoredAgainst +
-                ", scoredDifference= " + scoredDifference +
-                ", attemptFor= " + attemptFor +
-                ", attemptAgainst= " + attemptAgainst +
-                ", attemptBonus= " + attemptBonus +
-                ", lostBonus= " + lostBonus +
-                ", score= " + score +
-                '}';
+        return String.format("%-3d%-20s%10d%10d%10d", place, teamName, scoredFor,
+                scoredAgainst, score);
     }
 }
