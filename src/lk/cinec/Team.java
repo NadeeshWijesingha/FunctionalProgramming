@@ -17,20 +17,10 @@ public class Team implements Comparable<Team> {
     private int lostBonus;
     private int score;
 
-    public Team(int place,
-                String teamName,
-                int compete,
-                int win,
-                int drawn,
-                int lose,
-                int scoredFor,
-                int scoredAgainst,
-                int scoredDifference,
-                int attemptFor,
-                int attemptAgainst,
-                int attemptBonus,
-                int lostBonus,
-                int score) {
+    public Team(int place, String teamName, int compete,
+                int win, int drawn, int lose, int scoredFor,
+                int scoredAgainst, int scoredDifference, int attemptFor,
+                int attemptAgainst, int attemptBonus, int lostBonus, int score) {
 
         this.place = place;
         this.teamName = teamName;
